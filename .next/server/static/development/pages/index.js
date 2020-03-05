@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -175,6 +175,65 @@ function Nav() {
     },
     __self: this
   }, "\u6211\u7684")));
+}
+
+/***/ }),
+
+/***/ "./component/Tags.js":
+/*!***************************!*\
+  !*** ./component/Tags.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tags; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_tags_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/tags.scss */ "./style/tags.scss");
+/* harmony import */ var _style_tags_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_tags_scss__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\H5\\fanqitime\\component\\Tags.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+/**
+ * @return {boolean}
+ */
+
+function Tags(props) {
+  return __jsx("div", {
+    className: "tags",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, props.name), __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, props.tag)), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "\u5F00\u59CB"));
 }
 
 /***/ }),
@@ -1881,10 +1940,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/my.js":
-/*!*********************!*\
-  !*** ./pages/my.js ***!
-  \*********************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1896,9 +1955,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_reset_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/reset.scss */ "./style/reset.scss");
 /* harmony import */ var _style_reset_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_reset_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _component_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../component/Nav */ "./component/Nav.js");
-var _jsxFileName = "C:\\H5\\fanqitime\\pages\\my.js";
+/* harmony import */ var _component_Tags__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../component/Tags */ "./component/Tags.js");
+var _jsxFileName = "C:\\H5\\fanqitime\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 function Index() {
@@ -1921,7 +1982,39 @@ function Index() {
       lineNumber: 9
     },
     __self: this
-  }, "\u6211\u7684\u9875\u9762"));
+  }, __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "\u4EE3\u529E\u662F\u6307\u9700\u8981\u4E13\u6CE8\u7684\u4E8B",
+    tag: "\u54C8\u54C8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "\u70B9\u51FB\u6DFB\u52A0\u6309\u94AE\u6DFB\u52A0\u4EE3\u529E\u4E8B\u9879",
+    tag: "\u54C8\u54C8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "\u70B9\u51FB\u4EE3\u529E\u7F16\u8F91\u6216\u5220\u9664",
+    tag: "\u54C8\u54C8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    name: "\u70B9\u51FB\u5F00\u59CB\u6309\u94AE\uFF0C\u5F00\u59CB\u8BA1\u65F6",
+    tag: "\u54C8\u54C8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  })));
 }
 
 /***/ }),
@@ -1948,14 +2041,25 @@ function Index() {
 
 /***/ }),
 
-/***/ 4:
-/*!***************************!*\
-  !*** multi ./pages/my.js ***!
-  \***************************/
+/***/ "./style/tags.scss":
+/*!*************************!*\
+  !*** ./style/tags.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ 3:
+/*!******************************!*\
+  !*** multi ./pages/index.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\H5\fanqitime\pages\my.js */"./pages/my.js");
+module.exports = __webpack_require__(/*! C:\H5\fanqitime\pages\index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2071,4 +2175,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=my.js.map
+//# sourceMappingURL=index.js.map
