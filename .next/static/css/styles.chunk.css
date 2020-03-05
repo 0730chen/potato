@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul, ol {
+  list-style: none; }
+
+button, input {
+  font: inherit; }
+
+:focus {
+  outline: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.container {
+  display: flex;
+  flex-direction: column-reverse; }
+
+main {
+  flex-grow: 1; }
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 1000; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

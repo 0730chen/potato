@@ -1,12 +1,11 @@
 import Link from "next/link";
+import Nav from "../component/Nav";
 
 export default function Index() {
     return (
-        <div>
-            <Link href='/next'>
-                <a>next</a>
-            </Link>
-            <p>About</p>
+        <div className="container">
+            <Nav/>
+            <main>代办页面</main>
         </div>
     );
 }

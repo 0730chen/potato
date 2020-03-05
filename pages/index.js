@@ -1,11 +1,11 @@
-import Link from "next/link";
-import Header from '../component/Header';
+import '../style/reset.scss'
+import Nav from "../component/Nav";
 
 export default function Index() {
     return (
-        <div>
-            <Header/>
-            <p>Hello Next.js</p>
+        <div className="container">
+            <Nav/>
+            <main>Hello Next.js</main>
         </div>
     );
 }
