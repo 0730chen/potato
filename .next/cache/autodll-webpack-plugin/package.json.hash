@@ -1,0 +1,1 @@
+{"name":"potato","version":"1.0.0","main":"index.js","license":"MIT","dependencies":{"next":"^9.2.2","react-dom":"^16.13.0"},"scripts":{"dev":"next","build":"next build","start":"next start"},"devDependencies":{"react":"^16.13.0"},"readme":"ERROR: No README data found!","_id":"potato@1.0.0"}
