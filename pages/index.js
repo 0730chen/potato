@@ -1,7 +1,7 @@
 import '../style/reset.scss'
 import Nav from "../component/Nav";
 import Tags from "../component/Tags";
-
+import '../style/reset.scss'
 export default function Index() {
     return (
         <div className="container">

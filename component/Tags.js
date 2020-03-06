@@ -1,8 +1,5 @@
 import '../style/tags.scss'
-
-/**
- * @return {boolean}
- */
+import tag from "../style/tagCss";
 
 export default function Tags(props) {
     return (
@@ -10,7 +7,7 @@ export default function Tags(props) {
             <div className="tags-wrapper">
                 <p className="tags-name">{props.name}</p>
                 <p className="tags-time">{props.tag}</p>
-                </div>
+            </div>
             <div>开始</div>
 
         </div>

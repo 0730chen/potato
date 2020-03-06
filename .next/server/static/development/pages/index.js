@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,15 +107,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _style_Nav_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/Nav.scss */ "./style/Nav.scss");
-/* harmony import */ var _style_Nav_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_Nav_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _style_NavCss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/NavCss */ "./style/NavCss.js");
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Nav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function Nav() {
-  return __jsx("nav", {
+  return __jsx(_style_NavCss__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "Nav",
     __source: {
       fileName: _jsxFileName,
@@ -193,47 +192,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_tags_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/tags.scss */ "./style/tags.scss");
 /* harmony import */ var _style_tags_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_tags_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _style_tagCss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/tagCss */ "./style/tagCss.js");
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Tags.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-/**
- * @return {boolean}
- */
 
 function Tags(props) {
   return __jsx("div", {
     className: "tags",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     className: "tags-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 7
     },
     __self: this
   }, __jsx("p", {
     className: "tags-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 8
     },
     __self: this
   }, props.name), __jsx("p", {
     className: "tags-time",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 9
     },
     __self: this
   }, props.tag)), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 11
     },
     __self: this
   }, "\u5F00\u59CB"));
@@ -1965,6 +1962,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 function Index() {
   return __jsx("div", {
     className: "container",
@@ -2022,14 +2020,23 @@ function Index() {
 
 /***/ }),
 
-/***/ "./style/Nav.scss":
-/*!************************!*\
-  !*** ./style/Nav.scss ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./style/NavCss.js":
+/*!*************************!*\
+  !*** ./style/NavCss.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
+const NavCss = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.nav.withConfig({
+  displayName: "NavCss",
+  componentId: "sc-1h19vx2-0"
+})(["display:flex;flex-direction:row;justify-content:space-between;padding:0 10px;font-size:16px;font-weight:1000;border-top:1px solid black;"]);
+/* harmony default export */ __webpack_exports__["default"] = (NavCss);
 
 /***/ }),
 
@@ -2044,6 +2051,38 @@ function Index() {
 
 /***/ }),
 
+/***/ "./style/tagCss.js":
+/*!*************************!*\
+  !*** ./style/tagCss.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+const tag = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "tagCss__tag",
+  componentId: "bd9ly4-0"
+})(["border:1px solid black;padding:10px 20px;margin:8px 8px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;"]);
+const tagWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "tagCss__tagWrapper",
+  componentId: "bd9ly4-1"
+})(["display:flex;flex-direction:column;"]);
+const tagTime = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "tagCss__tagTime",
+  componentId: "bd9ly4-2"
+})(["font-size:12px;margin:10px 0;"]);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  tag,
+  tagWrapper,
+  tagTime
+});
+
+/***/ }),
+
 /***/ "./style/tags.scss":
 /*!*************************!*\
   !*** ./style/tags.scss ***!
@@ -2055,7 +2094,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -2163,6 +2202,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ }),
 

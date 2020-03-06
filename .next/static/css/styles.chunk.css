@@ -27,15 +27,6 @@ main {
   flex-grow: 1;
   height: 640px; }
 
-.Nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 10px;
-  font-size: 16px;
-  font-weight: 1000;
-  border-top: 1px solid black; }
-
 .tags {
   border: 1px solid black;
   padding: 10px 20px;
