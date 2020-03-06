@@ -27,21 +27,5 @@ main {
   flex-grow: 1;
   height: 640px; }
 
-.tags {
-  border: 1px solid black;
-  padding: 10px 20px;
-  margin: 8px 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.tags-wrapper {
-  display: flex;
-  flex-direction: column; }
-  .tags-wrapper > .tags-time {
-    font-size: 12px;
-    margin: 10px 0; }
-
 
 /*# sourceMappingURL=styles.chunk.css.map*/

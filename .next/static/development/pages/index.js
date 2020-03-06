@@ -97,47 +97,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tags; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_tags_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/tags.scss */ "./style/tags.scss");
-/* harmony import */ var _style_tags_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_tags_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _style_tagCss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/tagCss */ "./style/tagCss.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Tags.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
+var Tag = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Tags__Tag",
+  componentId: "sc-119g0fs-0"
+})(["border:1px solid black;padding:10px 20px;margin:8px 8px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;"]);
+var Div = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Tags__Div",
+  componentId: "sc-119g0fs-1"
+})(["display:flex;flex-direction:column;"]);
+var Font = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
+  displayName: "Tags__Font",
+  componentId: "sc-119g0fs-2"
+})(["font-size:12px;margin:10px 0;"]);
 function Tags(props) {
-  return __jsx("div", {
-    className: "tags",
+  return __jsx(Tag, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 22
     },
     __self: this
-  }, __jsx("div", {
-    className: "tags-wrapper",
+  }, __jsx(Div, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 23
     },
     __self: this
   }, __jsx("p", {
-    className: "tags-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 24
     },
     __self: this
-  }, props.name), __jsx("p", {
-    className: "tags-time",
+  }, props.name), __jsx(Font, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 25
     },
     __self: this
   }, props.tag)), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 27
     },
     __self: this
   }, "\u5F00\u59CB"));
@@ -12943,38 +12948,7 @@ var NavCss = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].nav.withC
 
 /***/ }),
 
-/***/ "./style/tagCss.js":
-/*!*************************!*\
-  !*** ./style/tagCss.js ***!
-  \*************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-var tag = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "tagCss__tag",
-  componentId: "bd9ly4-0"
-})(["border:1px solid black;padding:10px 20px;margin:8px 8px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;"]);
-var tagWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "tagCss__tagWrapper",
-  componentId: "bd9ly4-1"
-})(["display:flex;flex-direction:column;"]);
-var tagTime = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "tagCss__tagTime",
-  componentId: "bd9ly4-2"
-})(["font-size:12px;margin:10px 0;"]);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  tag: tag,
-  tagWrapper: tagWrapper,
-  tagTime: tagTime
-});
-
-/***/ }),
-
-/***/ 1:
+/***/ 2:
 /*!*********************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CH5%5Cfanqitime%5Cpages%5Cindex.js ***!
   \*********************************************************************************************************/
@@ -12997,5 +12971,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
