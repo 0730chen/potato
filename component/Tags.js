@@ -7,9 +7,9 @@ import '../style/tags.scss'
 export default function Tags(props) {
     return (
         <div className="tags">
-            <div>
-                <span>{props.name}</span>
-                <span>{props.tag}</span>
+            <div className="tags-wrapper">
+                <p className="tags-name">{props.name}</p>
+                <p className="tags-time">{props.tag}</p>
                 </div>
             <div>开始</div>
 

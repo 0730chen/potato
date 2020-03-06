@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -210,18 +210,21 @@ function Tags(props) {
     },
     __self: this
   }, __jsx("div", {
+    className: "tags-wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, __jsx("span", {
+  }, __jsx("p", {
+    className: "tags-name",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, props.name), __jsx("span", {
+  }, props.name), __jsx("p", {
+    className: "tags-time",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -1984,7 +1987,7 @@ function Index() {
     __self: this
   }, __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
     name: "\u4EE3\u529E\u662F\u6307\u9700\u8981\u4E13\u6CE8\u7684\u4E8B",
-    tag: "\u54C8\u54C8",
+    tag: "25\u5206\u949F",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -1992,7 +1995,7 @@ function Index() {
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
     name: "\u70B9\u51FB\u6DFB\u52A0\u6309\u94AE\u6DFB\u52A0\u4EE3\u529E\u4E8B\u9879",
-    tag: "\u54C8\u54C8",
+    tag: "10\u5206\u949F",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -2000,7 +2003,7 @@ function Index() {
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
     name: "\u70B9\u51FB\u4EE3\u529E\u7F16\u8F91\u6216\u5220\u9664",
-    tag: "\u54C8\u54C8",
+    tag: "5\u5206\u949F",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -2008,7 +2011,7 @@ function Index() {
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_3__["default"], {
     name: "\u70B9\u51FB\u5F00\u59CB\u6309\u94AE\uFF0C\u5F00\u59CB\u8BA1\u65F6",
-    tag: "\u54C8\u54C8",
+    tag: "1\u5206\u949F",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
@@ -2052,7 +2055,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
