@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import Dialog from "./Dialog";
+
+import {useState} from 'react'
 
 const Tag = styled.div`
   border: 1px solid black;
@@ -16,10 +19,21 @@ const Div = styled.div`
 const Font = styled.span`
     font-size: 12px;
     margin: 10px 0;
-`
+`;
+
+const show = (data)=>{
+    console.log(data);
+}
+const click = ()=>{
+    console.log('点击')
+}
+
 export default function Tags(props) {
     return (
-        <Tag>
+        <Tag onClick={(e) => {
+            click()
+            props.data(true)
+        }}>
             <Div>
                 <p>{props.name}</p>
                 <Font>{props.tag}</Font>
