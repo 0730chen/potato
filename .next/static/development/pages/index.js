@@ -184,12 +184,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dialog */ "./component/Dialog.js");
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Tags.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
 
 var Tag = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Tags__Tag",
@@ -221,31 +218,31 @@ function Tags(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 28
     },
     __self: this
   }, __jsx(Div, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 34
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 35
     },
     __self: this
   }, props.name), __jsx(Font, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 36
     },
     __self: this
   }, props.tag)), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 38
     },
     __self: this
   }, "\u5F00\u59CB"));
@@ -13037,6 +13034,7 @@ function Index() {
     tag: "10\u5206\u949F",
     visible: true,
     data: changeVisble,
+    onRef: onRef,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
@@ -13047,6 +13045,7 @@ function Index() {
     tag: "5\u5206\u949F",
     visible: true,
     data: changeVisble,
+    onRef: onRef,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
@@ -13057,16 +13056,10 @@ function Index() {
     tag: "1\u5206\u949F",
     visible: true,
     data: changeVisble,
+    onRef: onRef,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
-    },
-    __self: this
-  }), __jsx(_style_aboutCss__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: On,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
     },
     __self: this
   }), __jsx(_component_Dialog__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -13079,112 +13072,112 @@ function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }, __jsx("div", {
     className: "modal-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, "\u9884\u7EA6\u6570\u91CF\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   }, "2")), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, "\u603B\u91D1\u989D\u4E3A\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, "\uFFE5200"))), __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   }, "\u4F59\u989D\u62B5\u6263\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   }, "\uFFE50")), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, "\u5E94\u4ED8\u4F59\u989D\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }, "\uFFE5200")))))));

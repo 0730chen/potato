@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import Dialog from "./Dialog";
-
-import {useState} from 'react'
-
 const Tag = styled.div`
   border: 1px solid black;
   padding: 10px 20px;
@@ -32,7 +28,7 @@ export default function Tags(props) {
         <Tag onClick={(e) => {
             click()
             console.log(props);
-            props.onRef(show)
+            props.onRef(show);
             props.data(true)
         }}>
             <Div>
