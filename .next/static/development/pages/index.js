@@ -12,50 +12,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Dialog; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_dialog_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/dialog.scss */ "./style/dialog.scss");
+/* harmony import */ var _style_dialog_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_dialog_scss__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Dialog.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 function Dialog(props) {
   return props.visible ? __jsx("div", {
     className: "modal-mask",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "modal-wrap",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
-    className: "header",
+    className: "modal-wrap",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
-    className: "title",
+    className: "header",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     },
     __self: this
   }, "\u786E\u8BA4\u4ED8\u6B3E")), __jsx("div", {
     className: "body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, props.children), __jsx("div", {
     className: "footer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, __jsx("div", {
@@ -63,7 +66,7 @@ function Dialog(props) {
     onClick: props.onCancel,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, "\u53D6\u6D88"), __jsx("div", {
@@ -71,13 +74,13 @@ function Dialog(props) {
     onClick: props.onConfirm,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "\u786E\u5B9A")))) : __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   });
@@ -13069,6 +13072,7 @@ function Index() {
     },
     onConfirm: function onConfirm() {
       console.log('点击了确定按钮');
+      setDialogView(false);
     },
     __source: {
       fileName: _jsxFileName,
@@ -13079,105 +13083,105 @@ function Index() {
     className: "modal-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, "\u9884\u7EA6\u6570\u91CF\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, "2")), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, "\u603B\u91D1\u989D\u4E3A\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, "\uFFE5200"))), __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, "\u4F59\u989D\u62B5\u6263\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, "\uFFE50")), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, "\u5E94\u4ED8\u4F59\u989D\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, "\uFFE5200")))))));

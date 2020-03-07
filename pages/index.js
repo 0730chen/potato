@@ -15,11 +15,11 @@ export default function Index() {
         console.log(data)
         setDialogView(data)
     };
-    const onRef=(ref)=>{
+    const onRef = (ref) => {
         ref()
     }
-    const On = ()=>{
-       Tags.show
+    const On = () => {
+        Tags.show
     }
     return (
         <div className="container">
@@ -33,6 +33,7 @@ export default function Index() {
                     setDialogView(false)
                 }} onConfirm={() => {
                     console.log('点击了确定按钮')
+                    setDialogView(false)
                 }}>
                     <div className="modal-body">
                         <div className="row">
