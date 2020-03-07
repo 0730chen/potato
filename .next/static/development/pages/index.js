@@ -215,7 +215,6 @@ function Tags(props) {
   return __jsx(Tag, {
     onClick: function onClick(e) {
       click();
-      console.log(props);
       props.onRef(show);
       props.data(true);
     },
@@ -227,25 +226,25 @@ function Tags(props) {
   }, __jsx(Div, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }, props.name), __jsx(Font, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: this
   }, props.tag)), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, "\u5F00\u59CB"));

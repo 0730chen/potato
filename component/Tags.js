@@ -27,7 +27,6 @@ export default function Tags(props) {
     return (
         <Tag onClick={(e) => {
             click()
-            console.log(props);
             props.onRef(show);
             props.data(true)
         }}>
