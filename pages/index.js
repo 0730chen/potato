@@ -1,9 +1,9 @@
 import Nav from "../component/Nav";
 import Tags from "../component/Tags";
-import Test from "../component/Test";
 import '../style/reset.scss'
 import {useState} from "react";
 import Dialog from "../component/Dialog";
+import Button from "../style/aboutCss";
 
 function AddTab() {
     console.log('添加一个内容')
@@ -15,14 +15,21 @@ export default function Index() {
         console.log(data)
         setDialogView(data)
     };
+    const onRef=(ref)=>{
+        ref()
+    }
+    const On = ()=>{
+       Tags.show
+    }
     return (
         <div className="container">
             <Nav/>
             <main>
-                <Tags name="代办是指需要专注的事" tag="25分钟" visible={true} data={changeVisble}/>
+                <Tags name="代办是指需要专注的事" tag="25分钟" visible={true} data={changeVisble} onRef={onRef}/>
                 <Tags name="点击添加按钮添加代办事项" tag="10分钟" visible={true} data={changeVisble}/>
                 <Tags name="点击代办编辑或删除" tag="5分钟" visible={true} data={changeVisble}/>
                 <Tags name="点击开始按钮，开始计时" tag="1分钟" visible={true} data={changeVisble}/>
+                <Button onClick={On}/>
                 <Dialog visible={DialogView} onCancel={() => {
                     setDialogView(false)
                 }} onConfirm={() => {

@@ -21,17 +21,18 @@ const Font = styled.span`
     margin: 10px 0;
 `;
 
-const show = (data)=>{
-    console.log(data);
-}
-const click = ()=>{
-    console.log('点击')
-}
-
 export default function Tags(props) {
+    const show = ()=>{
+        console.log('子组件方法');
+    }
+    const click = ()=>{
+        console.log('点击')
+    }
     return (
         <Tag onClick={(e) => {
             click()
+            console.log(props);
+            props.onRef(show)
             props.data(true)
         }}>
             <Div>

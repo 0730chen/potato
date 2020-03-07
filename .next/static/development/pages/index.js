@@ -203,202 +203,52 @@ var Font = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withCo
   displayName: "Tags__Font",
   componentId: "sc-119g0fs-2"
 })(["font-size:12px;margin:10px 0;"]);
-
-var show = function show(data) {
-  console.log(data);
-};
-
-var click = function click() {
-  console.log('点击');
-};
-
 function Tags(props) {
+  var show = function show() {
+    console.log('子组件方法');
+  };
+
+  var click = function click() {
+    console.log('点击');
+  };
+
   return __jsx(Tag, {
     onClick: function onClick(e) {
       click();
+      console.log(props);
+      props.onRef(show);
       props.data(true);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }, __jsx(Div, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, props.name), __jsx(Font, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, props.tag)), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, "\u5F00\u59CB"));
-}
-
-/***/ }),
-
-/***/ "./component/Test.js":
-/*!***************************!*\
-  !*** ./component/Test.js ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Test; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Dialog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Dialog */ "./component/Dialog.js");
-var _jsxFileName = "C:\\H5\\fanqitime\\component\\Test.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function Test() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      DialogView = _useState[0],
-      setDialogView = _useState[1];
-
-  var onShow = function onShow() {
-    setDialogView(true);
-  };
-
-  return __jsx(_Dialog__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    visible: DialogView,
-    onCancel: function onCancel() {
-      console.log('dialog close');
-      setDialogView(false);
-    },
-    onConfirm: function onConfirm() {
-      console.log('点击了确定按钮');
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "modal-body",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "left",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, __jsx("span", {
-    className: "label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "\u9884\u7EA6\u6570\u91CF\uFF1A"), __jsx("span", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "2")), __jsx("div", {
-    className: "right",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, __jsx("span", {
-    className: "label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "\u603B\u91D1\u989D\u4E3A\uFF1A"), __jsx("span", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "\uFFE5200"))), __jsx("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "left",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, __jsx("span", {
-    className: "label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "\u4F59\u989D\u62B5\u6263\uFF1A"), __jsx("span", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "\uFFE50")), __jsx("div", {
-    className: "right",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, __jsx("span", {
-    className: "label",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, "\u5E94\u4ED8\u4F59\u989D\uFF1A"), __jsx("span", {
-    className: "value",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, "\uFFE5200")))));
 }
 
 /***/ }),
@@ -13116,10 +12966,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _component_Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../component/Nav */ "./component/Nav.js");
 /* harmony import */ var _component_Tags__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../component/Tags */ "./component/Tags.js");
-/* harmony import */ var _component_Test__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../component/Test */ "./component/Test.js");
-/* harmony import */ var _style_reset_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../style/reset.scss */ "./style/reset.scss");
-/* harmony import */ var _style_reset_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_reset_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _component_Dialog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../component/Dialog */ "./component/Dialog.js");
+/* harmony import */ var _style_reset_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/reset.scss */ "./style/reset.scss");
+/* harmony import */ var _style_reset_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_reset_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _component_Dialog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../component/Dialog */ "./component/Dialog.js");
+/* harmony import */ var _style_aboutCss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../style/aboutCss */ "./style/aboutCss.js");
 var _jsxFileName = "C:\\H5\\fanqitime\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -13144,23 +12994,31 @@ function Index() {
     setDialogView(data);
   };
 
+  var onRef = function onRef(ref) {
+    ref();
+  };
+
+  var On = function On() {
+    _component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"].show;
+  };
+
   return __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 25
     },
     __self: this
   }, __jsx(_component_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 26
     },
     __self: this
   }), __jsx("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 27
     },
     __self: this
   }, __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -13168,9 +13026,10 @@ function Index() {
     tag: "25\u5206\u949F",
     visible: true,
     data: changeVisble,
+    onRef: onRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 28
     },
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -13180,7 +13039,7 @@ function Index() {
     data: changeVisble,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 29
     },
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -13190,7 +13049,7 @@ function Index() {
     data: changeVisble,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 30
     },
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -13200,10 +13059,17 @@ function Index() {
     data: changeVisble,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 31
     },
     __self: this
-  }), __jsx(_component_Dialog__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), __jsx(_style_aboutCss__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    onClick: On,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }), __jsx(_component_Dialog__WEBPACK_IMPORTED_MODULE_4__["default"], {
     visible: DialogView,
     onCancel: function onCancel() {
       setDialogView(false);
@@ -13213,112 +13079,112 @@ function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 33
     },
     __self: this
   }, __jsx("div", {
     className: "modal-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 38
     },
     __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 39
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 40
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 40
     },
     __self: this
   }, "\u9884\u7EA6\u6570\u91CF\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 40
     },
     __self: this
   }, "2")), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 42
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 42
     },
     __self: this
   }, "\u603B\u91D1\u989D\u4E3A\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 42
     },
     __self: this
   }, "\uFFE5200"))), __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 45
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 46
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 46
     },
     __self: this
   }, "\u4F59\u989D\u62B5\u6263\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 46
     },
     __self: this
   }, "\uFFE50")), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 48
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 48
     },
     __self: this
   }, "\u5E94\u4ED8\u4F59\u989D\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 48
     },
     __self: this
   }, "\uFFE5200")))))));
@@ -13342,6 +13208,25 @@ var NavCss = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].nav.withC
   componentId: "sc-1h19vx2-0"
 })(["display:flex;flex-direction:row;justify-content:space-between;padding:0 10px;font-size:16px;font-weight:1000;border-top:1px solid black;"]);
 /* harmony default export */ __webpack_exports__["default"] = (NavCss);
+
+/***/ }),
+
+/***/ "./style/aboutCss.js":
+/*!***************************!*\
+  !*** ./style/aboutCss.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
+  displayName: "aboutCss__Button",
+  componentId: "p60fen-0"
+})(["font-size:1em;margin:1em;padding:0.25em 1em;border:2px solid palevioletred;border-radius:3px;"]);
+/* harmony default export */ __webpack_exports__["default"] = (Button);
 
 /***/ }),
 
