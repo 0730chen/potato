@@ -184,7 +184,7 @@ function Nav() {
     },
     __self: this
   }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    iconClass: "my",
+    iconClass: "wait",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -204,7 +204,7 @@ function Nav() {
     },
     __self: this
   }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    iconClass: "my",
+    iconClass: "document",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -224,7 +224,7 @@ function Nav() {
     },
     __self: this
   }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    iconClass: "my",
+    iconClass: "stc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9

@@ -4,9 +4,9 @@ import Icon from '../component/Icon'
 export default function Nav() {
     return (
         <NavCss className="Nav">
-            <Link href="/"><a><Icon iconClass="my"/>代办</a></Link>
-            <Link href="/about"><a><Icon iconClass="my"/>待办板</a></Link>
-            <Link href="/blank"><a><Icon iconClass="my"/>数据统计</a></Link>
+            <Link href="/"><a><Icon iconClass="wait"/>代办</a></Link>
+            <Link href="/about"><a><Icon iconClass="document"/>待办板</a></Link>
+            <Link href="/blank"><a><Icon iconClass="stc"/>数据统计</a></Link>
             <Link href="/my"><a><Icon iconClass="my"/>我的</a></Link>
         </NavCss>
     )
