@@ -209,7 +209,7 @@ requireAll(req);
 const Svg = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
   displayName: "Icon__Svg",
   componentId: "sc-25kmn4-0"
-})(["width:1em;height:1em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;border:1px solid black;"]);
+})(["width:1em;height:1em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"]);
 function Icon(props) {
   const iconName = `#icon-${props.iconClass}`;
   return __jsx(Svg, {
@@ -217,14 +217,14 @@ function Icon(props) {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }, __jsx("use", {
     xlinkHref: iconName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }));

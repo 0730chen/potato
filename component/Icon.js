@@ -8,7 +8,6 @@ const Svg = styled.svg`
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
-  border: 1px solid black;
 `
 export default function Icon(props) {
     const iconName = `#icon-${props.iconClass}`;
