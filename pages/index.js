@@ -3,11 +3,16 @@ import Tags from "../component/Tags";
 import '../style/reset.scss'
 import {useState} from "react";
 import Dialog from "../component/Dialog";
-import Button from "../style/aboutCss";
+import styled from "styled-components";
 
 function AddTab() {
     console.log('添加一个内容')
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+`;
 
 export default function Index() {
     const [DialogView, setDialogView] = useState(false);
@@ -22,7 +27,7 @@ export default function Index() {
         Tags.show
     }
     return (
-        <div className="container">
+        <Container>
             <Nav/>
             <main>
                 <Tags name="代办是指需要专注的事" tag="25分钟" visible={true} data={changeVisble} onRef={onRef}/>
@@ -51,6 +56,6 @@ export default function Index() {
                     </div>
                 </Dialog>
             </main>
-        </div>
+        </Container>
     );
 }

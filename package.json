@@ -19,6 +19,7 @@
     "start": "next start"
   },
   "devDependencies": {
-    "react": "^16.13.0"
+    "react": "^16.13.0",
+    "svg-sprite-loader": "^4.2.1"
   }
 }

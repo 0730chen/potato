@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 const Tag = styled.div`
   border: 1px solid black;
   padding: 10px 20px;
@@ -8,7 +9,7 @@ const Tag = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
-const Div = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -18,10 +19,10 @@ const Font = styled.span`
 `;
 
 export default function Tags(props) {
-    const show = ()=>{
+    const show = () => {
         console.log('子组件方法');
     }
-    const click = ()=>{
+    const click = () => {
         console.log('点击')
     }
     return (
@@ -30,10 +31,10 @@ export default function Tags(props) {
             props.onRef(show);
             props.data(true)
         }}>
-            <Div>
+            <Wrapper>
                 <p>{props.name}</p>
                 <Font>{props.tag}</Font>
-            </Div>
+            </Wrapper>
             <div>开始</div>
         </Tag>
     )
