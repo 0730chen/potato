@@ -1,6 +1,5 @@
-import my from '../public/Icon/my.svg'
-import '../style/Icon.scss'
 import styled from "styled-components";
+
 const requireAll = requireContext => requireContext.keys().map(requireContext);
 const req = require.context('../public/Icon/', false, /\.svg$/);
 requireAll(req)

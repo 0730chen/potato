@@ -194,16 +194,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Icon; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_Icon_my_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/Icon/my.svg */ "./public/Icon/my.svg");
-/* harmony import */ var _style_Icon_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/Icon.scss */ "./style/Icon.scss");
-/* harmony import */ var _style_Icon_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_Icon_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Icon.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
 
 
 const requireAll = requireContext => requireContext.keys().map(requireContext);
@@ -211,13 +206,10 @@ const requireAll = requireContext => requireContext.keys().map(requireContext);
 const req = __webpack_require__("./public/Icon sync \\.svg$");
 
 requireAll(req);
-const Svg = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.svg`
-  width: 1em; height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-  border: 1px solid black;
-`;
+const Svg = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.svg.withConfig({
+  displayName: "Icon__Svg",
+  componentId: "sc-25kmn4-0"
+})(["width:1em;height:1em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;border:1px solid black;"]);
 function Icon(props) {
   const iconName = `#icon-${props.iconClass}`;
   return __jsx(Svg, {
@@ -225,14 +217,14 @@ function Icon(props) {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, __jsx("use", {
     xlinkHref: iconName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   }));
@@ -267,11 +259,31 @@ function Nav() {
     className: "Nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    iconClass: "my",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }), "\u4EE3\u529E")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -290,46 +302,47 @@ function Nav() {
       lineNumber: 8
     },
     __self: this
-  }), "\u4EE3\u529E")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "\u5F85\u529E\u677F")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }), "\u5F85\u529E\u677F")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
-  }, "\u6570\u636E\u7EDF\u8BA1")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    iconClass: "my",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }), "\u6570\u636E\u7EDF\u8BA1")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/my",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
-  }, "\u6211\u7684")));
+  }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    iconClass: "my",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), "\u6211\u7684")));
 }
 
 /***/ }),
@@ -3050,19 +3063,6 @@ var symbol = new _node_modules_svg_baker_runtime_symbol_js__WEBPACK_IMPORTED_MOD
 });
 var result = _node_modules_svg_sprite_loader_runtime_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);
 /* harmony default export */ __webpack_exports__["default"] = (symbol);
-
-/***/ }),
-
-/***/ "./style/Icon.scss":
-/*!*************************!*\
-  !*** ./style/Icon.scss ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"icon": "_1nG4OiTkuCp4bb7TvxDKFu"
-};
 
 /***/ }),
 
