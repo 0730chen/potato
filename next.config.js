@@ -4,8 +4,6 @@ function resolve(dir) {
     return path.join(__dirname, '.', dir)
 }
 module.exports = withSass({
-    cssModules: true,
-
     webpack: (config, options) => {
         const {dev, isServer} = options
         // config.module.rules[1].exclude.push(resolve('./public/Icon'));

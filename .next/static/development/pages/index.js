@@ -23,42 +23,42 @@ function Dialog(props) {
     className: "modal-mask",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 4
     },
     __self: this
   }, __jsx("div", {
     className: "modal-wrap",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
     className: "header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     className: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, "\u786E\u8BA4\u4ED8\u6B3E")), __jsx("div", {
     className: "body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, props.children), __jsx("div", {
     className: "footer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, __jsx("div", {
@@ -66,7 +66,7 @@ function Dialog(props) {
     onClick: props.onCancel,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, "\u53D6\u6D88"), __jsx("div", {
@@ -74,13 +74,13 @@ function Dialog(props) {
     onClick: props.onConfirm,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, "\u786E\u5B9A")))) : __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   });
@@ -14930,7 +14930,7 @@ var NavCss = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].nav.withC
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!*********************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CH5%5Cfanqitime%5Cpages%5Cindex.js ***!
   \*********************************************************************************************************/
@@ -14953,5 +14953,5 @@ module.exports = dll_0fb095e325d7ebf261c3;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

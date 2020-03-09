@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -116,42 +116,42 @@ function Dialog(props) {
     className: "modal-mask",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 4
     },
     __self: this
   }, __jsx("div", {
     className: "modal-wrap",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
     className: "header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     className: "title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, "\u786E\u8BA4\u4ED8\u6B3E")), __jsx("div", {
     className: "body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, props.children), __jsx("div", {
     className: "footer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, __jsx("div", {
@@ -159,7 +159,7 @@ function Dialog(props) {
     onClick: props.onCancel,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, "\u53D6\u6D88"), __jsx("div", {
@@ -167,13 +167,13 @@ function Dialog(props) {
     onClick: props.onConfirm,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, "\u786E\u5B9A")))) : __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   });
@@ -3093,17 +3093,7 @@ const NavCss = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.nav.with
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"modal-mask": "grbKB82ZOdja6NuKsJ3cb",
-	"modal-wrap": "DPZ8z9V7AkYYKbOopy9VF",
-	"slideDown": "_1YTKfQqActlwGHIAPhK2zO",
-	"header": "_3S3N4bcPKVOGEKSsYuplNA",
-	"title": "yZsXO3y4U7AbvYtdXV6e3",
-	"body": "_1vF_jlVIHV-r7Sa8hBU0cX",
-	"footer": "XMB_m8K3uF0t8orOb1wpv",
-	"cancel": "_34GVU5r8n-5dcC84vfIqE4",
-	"confirm": "_3UNe3Hc8rfUW3R1CV0Pp0D"
-};
+
 
 /***/ }),
 
@@ -3118,7 +3108,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

@@ -23,14 +23,14 @@ main {
   flex-grow: 1;
   height: 640px; }
 
-.grbKB82ZOdja6NuKsJ3cb {
+.modal-mask {
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5); }
-  .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF {
+  .modal-mask .modal-wrap {
     z-index: 99;
     height: 265px;
     width: 86%;
@@ -38,18 +38,18 @@ main {
     background: white;
     margin-top: 120px;
     background-size: 100% 100%;
-    animation: _1YTKfQqActlwGHIAPhK2zO .3s; }
-    .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF ._3S3N4bcPKVOGEKSsYuplNA {
+    animation: slideDown .3s; }
+    .modal-mask .modal-wrap .header {
       height: 104px; }
-      .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF ._3S3N4bcPKVOGEKSsYuplNA .yZsXO3y4U7AbvYtdXV6e3 {
+      .modal-mask .modal-wrap .header .title {
         padding-top: 20px;
         color: #ffffff;
         font-size: 22px; }
-    .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF ._1vF_jlVIHV-r7Sa8hBU0cX {
+    .modal-mask .modal-wrap .body {
       height: 115px; }
-    .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF .XMB_m8K3uF0t8orOb1wpv {
+    .modal-mask .modal-wrap .footer {
       height: 46px; }
-      .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF .XMB_m8K3uF0t8orOb1wpv ._34GVU5r8n-5dcC84vfIqE4 {
+      .modal-mask .modal-wrap .footer .cancel {
         display: inline-block;
         height: 46px;
         line-height: 46px;
@@ -57,9 +57,9 @@ main {
         font-size: 15px;
         color: #c1c4c9;
         border-radius: 0 0  0 15px; }
-        .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF .XMB_m8K3uF0t8orOb1wpv ._34GVU5r8n-5dcC84vfIqE4:active {
+        .modal-mask .modal-wrap .footer .cancel:active {
           background: #dddddd; }
-      .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF .XMB_m8K3uF0t8orOb1wpv ._3UNe3Hc8rfUW3R1CV0Pp0D {
+      .modal-mask .modal-wrap .footer .confirm {
         display: inline-block;
         height: 46px;
         line-height: 46px;
@@ -67,10 +67,10 @@ main {
         font-size: 15px;
         color: #1eb94a;
         border-radius: 0 0 15px 0; }
-        .grbKB82ZOdja6NuKsJ3cb .DPZ8z9V7AkYYKbOopy9VF .XMB_m8K3uF0t8orOb1wpv ._3UNe3Hc8rfUW3R1CV0Pp0D:active {
+        .modal-mask .modal-wrap .footer .confirm:active {
           background: #dddddd; }
 
-@keyframes _1YTKfQqActlwGHIAPhK2zO {
+@keyframes slideDown {
   from {
     margin-top: 0px; }
   to {

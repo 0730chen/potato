@@ -1,5 +1,4 @@
 import '../style/dialog.scss'
-
 export default function Dialog(props) {
     return props.visible ? (
         <div className="modal-mask">
