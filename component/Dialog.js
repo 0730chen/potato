@@ -4,7 +4,7 @@ export default function Dialog(props) {
         <div className="modal-mask">
             <div className="modal-wrap">
                 <div className="header">
-                    <div className="title">确认付款</div>
+                    <div className="title">待办事项</div>
                 </div>
                 <div className="body">
                     {props.children}

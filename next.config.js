@@ -6,7 +6,6 @@ function resolve(dir) {
 module.exports = withSass({
     webpack: (config, options) => {
         const {dev, isServer} = options
-        // config.module.rules[1].exclude.push(resolve('./public/Icon'));
         config.module.rules.push({
             test: /\.svg$/,
             include: resolve('./public/Icon'),

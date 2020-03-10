@@ -1,5 +1,6 @@
 import Nav from "../component/Nav";
 import styled from "styled-components";
+import Title from "../component/Tiitle";
 
 const Container = styled.div`
   display: flex;
@@ -11,6 +12,7 @@ export default function Index() {
         <Container>
             <Nav/>
             <main>代办事项页面</main>
+            <Title>代办页面标题</Title>
         </Container>
     );
 }

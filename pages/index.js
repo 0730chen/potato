@@ -4,6 +4,7 @@ import '../style/reset.scss'
 import {useState} from "react";
 import Dialog from "../component/Dialog";
 import styled from "styled-components";
+import Title from "../component/Tiitle";
 
 function AddTab() {
     console.log('添加一个内容')
@@ -42,7 +43,7 @@ export default function Index() {
                 }}>
                     <div className="modal-body">
                         <div className="row">
-                            <div className="left"><span className="label">预约数量：</span><span className="value">2</span>
+                            <div className="left"><span className="label"><input type="text" placeholder="请输入代办事项"/></span><span className="value"></span>
                             </div>
                             <div className="right"><span className="label">总金额为：</span><span
                                 className="value">￥200</span></div>
@@ -56,6 +57,7 @@ export default function Index() {
                     </div>
                 </Dialog>
             </main>
+            <Title>闹钟</Title>
         </Container>
     );
 }

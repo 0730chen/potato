@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -140,7 +140,7 @@ function Dialog(props) {
       lineNumber: 7
     },
     __self: this
-  }, "\u786E\u8BA4\u4ED8\u6B3E")), __jsx("div", {
+  }, "\u5F85\u529E\u4E8B\u9879")), __jsx("div", {
     className: "body",
     __source: {
       fileName: _jsxFileName,
@@ -248,98 +248,106 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _style_NavCss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/NavCss */ "./style/NavCss.js");
 /* harmony import */ var _component_Icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../component/Icon */ "./component/Icon.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Nav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 function Nav() {
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
   return __jsx(_style_NavCss__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "Nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 9
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 10
     },
     __self: this
   }, __jsx("a", {
+    className: router.pathname === "/" ? "active" : "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 10
     },
     __self: this
   }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
     iconClass: "wait",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 10
     },
     __self: this
   }), "\u4EE3\u529E")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
+    className: router.pathname === "/about" ? "active" : "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
     iconClass: "document",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }), "\u5F85\u529E\u677F")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
   }, __jsx("a", {
+    className: router.pathname === "/blank" ? "active" : "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
   }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
     iconClass: "stc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
   }), "\u6570\u636E\u7EDF\u8BA1")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/my",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: this
   }, __jsx("a", {
+    className: router.pathname === "/my" ? "active" : "",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: this
   }, __jsx(_component_Icon__WEBPACK_IMPORTED_MODULE_3__["default"], {
     iconClass: "my",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: this
   }), "\u6211\u7684")));
@@ -422,6 +430,40 @@ function Tags(props) {
     },
     __self: this
   }, "\u5F00\u59CB"));
+}
+
+/***/ }),
+
+/***/ "./component/Tiitle.js":
+/*!*****************************!*\
+  !*** ./component/Tiitle.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Title; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\H5\\fanqitime\\component\\Tiitle.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const Span = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Tiitle__Span",
+  componentId: "sc-1rbyw1w-0"
+})(["background:rgb(88,171,233);padding:0px 10px;color:white;display:flex;flex-direction:row-reverse;"]);
+function Title(props) {
+  return __jsx(Span, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, props.children);
 }
 
 /***/ }),
@@ -2703,9 +2745,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_Dialog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../component/Dialog */ "./component/Dialog.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _component_Tiitle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../component/Tiitle */ "./component/Tiitle.js");
 var _jsxFileName = "C:\\H5\\fanqitime\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2743,19 +2787,19 @@ function Index() {
   return __jsx(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, __jsx(_component_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }), __jsx("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -2766,7 +2810,7 @@ function Index() {
     onRef: onRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -2777,7 +2821,7 @@ function Index() {
     onRef: onRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -2788,7 +2832,7 @@ function Index() {
     onRef: onRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }), __jsx(_component_Tags__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -2799,7 +2843,7 @@ function Index() {
     onRef: onRef,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), __jsx(_component_Dialog__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -2813,115 +2857,129 @@ function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, __jsx("div", {
     className: "modal-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
-  }, "\u9884\u7EA6\u6570\u91CF\uFF1A"), __jsx("span", {
+  }, __jsx("input", {
+    type: "text",
+    placeholder: "\u8BF7\u8F93\u5165\u4EE3\u529E\u4E8B\u9879",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  })), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
-  }, "2")), __jsx("div", {
+  })), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, "\u603B\u91D1\u989D\u4E3A\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, "\uFFE5200"))), __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   }, __jsx("div", {
     className: "left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, "\u4F59\u989D\u62B5\u6263\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, "\uFFE50")), __jsx("div", {
     className: "right",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, __jsx("span", {
     className: "label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, "\u5E94\u4ED8\u4F59\u989D\uFF1A"), __jsx("span", {
     className: "value",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
-  }, "\uFFE5200")))))));
+  }, "\uFFE5200")))))), __jsx(_component_Tiitle__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }, "\u95F9\u949F"));
 }
 
 /***/ }),
@@ -3108,7 +3166,7 @@ const NavCss = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.nav.with
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -3172,6 +3230,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 
