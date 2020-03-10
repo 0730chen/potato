@@ -1,8 +1,10 @@
 const withSass = require('@zeit/next-sass')
 const path = require('path')
+
 function resolve(dir) {
     return path.join(__dirname, '.', dir)
 }
+
 module.exports = withSass({
     webpack: (config, options) => {
         const {dev, isServer} = options
@@ -13,7 +15,8 @@ module.exports = withSass({
                 {
                     loader: 'svg-sprite-loader',
                     options: {
-                        symbolId: 'icon-[name]'
+                        symbolId: 'icon-[name]',
+                        removeAttr: 'fill'
                     }
                 }
             ]

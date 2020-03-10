@@ -26,6 +26,9 @@ main {
 .active {
   color: chocolate; }
 
+path {
+  fill: inherit; }
+
 .modal-mask {
   position: fixed;
   width: 100%;
