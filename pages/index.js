@@ -57,7 +57,7 @@ export default function Index() {
                     </div>
                 </Dialog>
             </main>
-            <Title>闹钟</Title>
+            <Title></Title>
         </Container>
     );
 }

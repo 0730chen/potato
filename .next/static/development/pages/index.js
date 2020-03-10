@@ -354,9 +354,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Icon */ "./component/Icon.js");
 var _jsxFileName = "C:\\H5\\fanqitime\\component\\Tiitle.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 var Span = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Tiitle__Span",
@@ -366,10 +368,52 @@ function Title(props) {
   return __jsx(Span, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: this
-  }, props.children);
+  }, __jsx("div", {
+    style: {
+      padding: '0px 20px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, props.children), __jsx("div", {
+    style: {
+      padding: '0px 20px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx(_Icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    iconClass: "Add",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  })), __jsx("div", {
+    style: {
+      padding: '0px 20px',
+      color: 'white'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx(_Icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    iconClass: "pick",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  })));
 }
 
 /***/ }),
@@ -14823,7 +14867,7 @@ function Index() {
       lineNumber: 60
     },
     __self: this
-  }, "\u95F9\u949F"));
+  }));
 }
 
 /***/ }),
@@ -14836,8 +14880,10 @@ function Index() {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"./Add.svg": "./public/Icon/Add.svg",
 	"./document.svg": "./public/Icon/document.svg",
 	"./my.svg": "./public/Icon/my.svg",
+	"./pick.svg": "./public/Icon/pick.svg",
 	"./stc.svg": "./public/Icon/stc.svg",
 	"./wait.svg": "./public/Icon/wait.svg"
 };
@@ -14861,6 +14907,32 @@ webpackContext.keys = function webpackContextKeys() {
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
 webpackContext.id = "./public/Icon sync \\.svg$";
+
+/***/ }),
+
+/***/ "./public/Icon/Add.svg":
+/*!*****************************!*\
+  !*** ./public/Icon/Add.svg ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/svg-baker-runtime/browser-symbol.js */ "./node_modules/svg-baker-runtime/browser-symbol.js");
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/svg-sprite-loader/runtime/browser-sprite.build.js */ "./node_modules/svg-sprite-loader/runtime/browser-sprite.build.js");
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default.a({
+  "id": "icon-Add",
+  "use": "icon-Add-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-Add\"><defs><style type=\"text/css\"></style></defs><path d=\"M931.3 484.2h-382c-5.5 0-10-4.5-10-10v-382c0-15.5-12.5-28-28-28s-28 12.5-28 28v382c0 5.5-4.5 10-10 10h-382c-15.5 0-28 12.5-28 28s12.5 28 28 28h382c5.5 0 10 4.5 10 10v382c0 15.5 12.5 28 28 28s28-12.5 28-28v-382c0-5.5 4.5-10 10-10h382c15.5 0 28-12.5 28-28 0-15.4-12.5-28-28-28z\" fill=\"\" p-id=\"1277\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);
+/* harmony default export */ __webpack_exports__["default"] = (symbol);
 
 /***/ }),
 
@@ -14910,6 +14982,32 @@ var symbol = new _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPO
   "use": "icon-my-usage",
   "viewBox": "0 0 1024 1024",
   "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-my\"><defs><style type=\"text/css\"></style></defs><path d=\"M511.082255 688.480502a343.781264 343.781264 0 1 1 343.781264-343.781264A344.240251 344.240251 0 0 1 511.082255 688.480502z m0-621.009413a275.392201 275.392201 0 1 0 275.392201 275.392201 275.392201 275.392201 0 0 0-275.392201-275.851188z\" fill=\"#515151\" p-id=\"3940\" /><path d=\"M69.077773 1024H65.864864a33.506051 33.506051 0 0 1-30.293142-36.259973 481.936351 481.936351 0 0 1 298.800538-410.334379 33.506051 33.506051 0 0 1 27.080233 61.045271 413.088301 413.088301 0 0 0-259.327656 355.255939 33.506051 33.506051 0 0 1-33.047064 30.293142zM953.545725 1024a33.506051 33.506051 0 0 1-33.047064-30.293142 413.088301 413.088301 0 0 0-156.055581-288.243837 33.506051 33.506051 0 1 1 45.8987-50.029583 472.756611 472.756611 0 0 1 178.086957 332.306589 33.506051 33.506051 0 0 1-30.293142 36.259973z\" fill=\"#515151\" p-id=\"3941\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);
+/* harmony default export */ __webpack_exports__["default"] = (symbol);
+
+/***/ }),
+
+/***/ "./public/Icon/pick.svg":
+/*!******************************!*\
+  !*** ./public/Icon/pick.svg ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/svg-baker-runtime/browser-symbol.js */ "./node_modules/svg-baker-runtime/browser-symbol.js");
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/svg-sprite-loader/runtime/browser-sprite.build.js */ "./node_modules/svg-sprite-loader/runtime/browser-sprite.build.js");
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default.a({
+  "id": "icon-pick",
+  "use": "icon-pick-usage",
+  "viewBox": "0 0 1024 1024",
+  "content": "<symbol class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" id=\"icon-pick\"><defs><style type=\"text/css\"></style></defs><path d=\"M914.672 378.672c-24-240-261.328-317.328-261.328-317.328C544 26.672 440 48 440 48 186.672 80 122.672 362.672 122.672 362.672 88 546.672 221.328 704 221.328 704 256 736 512 984 512 984h32c0-13.328 253.328-261.328 253.328-261.328 165.344-154.672 117.344-344 117.344-344zM522.912 722.432c-160.464 0-290.544-130.08-290.544-290.544 0-160.464 130.08-290.544 290.544-290.544 160.464 0 290.544 130.08 290.544 290.544 0 160.448-130.08 290.544-290.544 290.544z\" p-id=\"2551\" fill=\"#2c2c2c\" /><path d=\"M472 250.672v208s13.328 34.672 40 34.672h144s73.328-36 0-73.328l-97.328-1.328s-22.672 13.328-22.672-24l1.328-144c0-0.016-30.656-45.36-65.328-0.016z\" p-id=\"2552\" fill=\"#2c2c2c\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default.a.add(symbol);
 /* harmony default export */ __webpack_exports__["default"] = (symbol);
