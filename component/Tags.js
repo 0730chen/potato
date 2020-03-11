@@ -20,10 +20,8 @@ const Font = styled.span`
 
 export default function Tags(props) {
     const show = () => {
-        console.log('子组件方法');
     }
     const click = () => {
-        console.log('点击')
     }
     return (
         <Tag onClick={(e) => {

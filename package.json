@@ -8,8 +8,12 @@
     "@zeit/next-sass": "^1.0.1",
     "css-loader": "^3.4.2",
     "next": "^9.2.2",
+    "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
     "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "style-component": "^0.0.1",
     "styled-components": "^5.0.1"
   },

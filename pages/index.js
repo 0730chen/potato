@@ -18,7 +18,6 @@ const Container = styled.div`
 export default function Index() {
     const [DialogView, setDialogView] = useState(false);
     const changeVisble = (data) => {
-        console.log(data)
         setDialogView(data)
     };
     const onRef = (ref) => {
@@ -31,10 +30,7 @@ export default function Index() {
         <Container>
             <Nav/>
             <main>
-                <Tags name="代办是指需要专注的事" tag="25分钟" visible={true} data={changeVisble} onRef={onRef}/>
-                <Tags name="点击添加按钮添加代办事项" tag="10分钟" visible={true} data={changeVisble} onRef={onRef}/>
-                <Tags name="点击代办编辑或删除" tag="5分钟" visible={true} data={changeVisble} onRef={onRef}/>
-                <Tags name="点击开始按钮，开始计时" tag="1分钟" visible={true} data={changeVisble} onRef={onRef}/>
+                <Tags name="添加代办事项" tag="25分钟" visible={true} data={changeVisble} onRef={onRef}/>
                 <Dialog visible={DialogView} onCancel={() => {
                     setDialogView(false)
                 }} onConfirm={() => {
@@ -43,7 +39,9 @@ export default function Index() {
                 }}>
                     <div className="modal-body">
                         <div className="row">
-                            <div className="left"><span className="label"><input type="text" placeholder="请输入代办事项"/></span><span className="value"></span>
+                            <div className="left"><span className="label"><input type="text"
+                                                                                 placeholder="请输入代办事项"/></span><span
+                                className="value"></span>
                             </div>
                             <div className="right"><span className="label">总金额为：</span><span
                                 className="value">￥200</span></div>

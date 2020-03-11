@@ -7,13 +7,12 @@ const Container = styled.div`
   display: flex;
   flex-direction: column-reverse;
 `;
-
 export default function Index() {
     return (
         <Container>
             <Nav/>
             <main>我的页面的内容</main>
-            <Title>我的页面</Title>
+            <Title/>
         </Container>
     );
 }
