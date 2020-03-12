@@ -428,7 +428,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 const reducer = (state = {
-  foo: ''
+  foo: 'wwww'
 }, action) => {
   switch (action.type) {
     case 'FOO':

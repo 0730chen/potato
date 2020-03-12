@@ -5,7 +5,7 @@ import {Provider} from "react-redux";
 import App from "next/app";
 import withRedux from "next-redux-wrapper";
 
-const reducer = (state = {foo: ''}, action) => {
+const reducer = (state = {foo: 'wwww'}, action) => {
     switch (action.type) {
         case 'FOO':
             return {...state, foo: action.payload};
