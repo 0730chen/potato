@@ -7,6 +7,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column-reverse;
 `;
+import React from 'react'
 export default function Index() {
     return (
         <Container>

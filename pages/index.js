@@ -5,6 +5,26 @@ import {useState} from "react";
 import Dialog from "../component/Dialog";
 import styled from "styled-components";
 import Title from "../component/Tiitle";
+import {createStore} from 'redux'
+import todoApp from '../redux/reducers'
+import {
+    addTodo,
+    toggleTodo,
+    setVisibilityFilter,
+    VisibilityFilters
+} from '../redux/actions'
+
+let store = createStore(todoApp)
+console.log(store.getState());
+const unsubscribe = store.subscribe(() =>
+    console.log(store.getState())
+)
+store.dispatch(addTodo('Learn about actions'))
+store.dispatch(addTodo('Learn about reducers'))
+store.dispatch(addTodo('Learn about store'))
+store.dispatch(toggleTodo(0))
+store.dispatch(toggleTodo(1))
+store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED))
 
 function AddTab() {
     console.log('添加一个内容')
@@ -40,8 +60,7 @@ export default function Index() {
                     <div className="modal-body">
                         <div className="row">
                             <div className="left"><span className="label"><input type="text"
-                                                                                 placeholder="请输入代办事项"/></span><span
-                                className="value"></span>
+                                                                                 placeholder="请输入代办事项"/></span><span className="value"></span>
                             </div>
                             <div className="right"><span className="label">总金额为：</span><span
                                 className="value">￥200</span></div>
